@@ -14,7 +14,7 @@
     </div>
     <%= f.label :body %>
     <div class="input-group-lg">
-      <%= f.text_area :body, class: "form-control", placeholder: 'Contenido', rows: 12 %>
+      <%= f.cktext_area :body, ckeditor: { language: 'es',uiColor: '#819bea', toolbar: 'mini'}, class: "form-control", placeholder: 'Contenido' %>
     </div>
     <p>
       <%= f.submit %>

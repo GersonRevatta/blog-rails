@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
+gem 'ckeditor'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
