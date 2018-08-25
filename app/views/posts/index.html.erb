@@ -1,0 +1,11 @@
+<%= link_to 'New post', new_post_path %>
+<br>
+Elements
+<% @posts.each do |post| %>
+<p>
+ <%= link_to post.name, post %>
+ <%= post.created_at.strftime("%B %d, %Y") %>
+ <br>
+ <%= post.body %>
+</p>
+<% end %>
