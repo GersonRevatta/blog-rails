@@ -3,7 +3,6 @@ if Rails.env.development?
   ActionMailer::Base.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    #domain:               'single-user-blog.herokuapp.com',
     domain:               'localhost:3000',
     user_name:            'gersonrevatta@gmail.com',
     password:             'GersonRevatta1995',
