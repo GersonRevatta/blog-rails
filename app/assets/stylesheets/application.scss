@@ -29,10 +29,10 @@
 hr {
   border-top: 1px solid red;
 }
-.content_new {
-  overflow:hidden;
-  white-space:nowrap;
-  text-overflow:ellipsis;
+.content_new > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 /* new */
 .containter_new {
