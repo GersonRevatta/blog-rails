@@ -7,3 +7,5 @@
 <%= time_ago_in_words(@post.created_at) %>
 <br>
 <%= @post.body %>
+<%= render @post.comments %>
+<%= render 'comments/form' %>
