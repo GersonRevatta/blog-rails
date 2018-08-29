@@ -1,0 +1,91 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/* flash devise */
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+/* slider */
+#myCarousel {
+      margin-top: -2em;
+}
+.item {
+  height: 95vh;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.first-slide {
+  background-image: url('https://cdn.pixabay.com/photo/2018/08/11/20/37/cathedral-3599450__340.jpg');
+}
+.second-slide {
+  background-image: url('https://cdn.pixabay.com/photo/2018/07/15/23/22/prague-3540883__340.jpg');
+}
+.third-slide {
+  background-image: url('https://cdn.pixabay.com/photo/2018/08/21/23/29/fog-3622519__340.jpg');
+}
+/* news */
+.icanux {
+  background: blue;
+  height: 6em;
+}
+.container_news {
+  padding: 1.5em 3em;
+}
+hr {
+  border-top: 1px solid red;
+}
+.content_new > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* new */
+.containter_new {
+  padding: 2em 6em;
+}
+.content_description, .container_comment {
+  padding: 1em 4em;
+}
+.title_post {
+  text-align: center;
+}
+/* form devise */
+.form_registration, .form_session {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+/* form post */
+.content_form {
+  padding: 3em;
+}
+/* footer */
+.blog-footer {
+    text-align: center;
+}

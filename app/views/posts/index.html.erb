@@ -1,0 +1,16 @@
+<div class="container_news">
+  <div class="row">
+    <div class="col-md-9">
+      <% @posts.each do |post| %>
+        <strong><h2><%= link_to post.name, post %></h2></strong><br>
+        <div class="content_new"><%= raw post.body %></div>
+        <blockquote>
+          <footer class=""><%= post.created_at.strftime("%B %d, %Y") %></footer>
+        </blockquote>
+        <hr>
+        <br>
+      <% end %>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>

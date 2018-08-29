@@ -1,0 +1,23 @@
+<%= form_for @post do |f| %>
+  <% if @post.errors.any? %>
+    <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
+    <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <div class="content_form">
+    <%= f.label :name %>
+    <div class="input-group-lg">
+      <%= f.text_field :name, class: "form-control", placeholder: 'Titulo' %>
+    </div>
+    <%= f.label :body %>
+    <div class="input-group-lg">
+      <%= f.cktext_area :body, ckeditor: { language: 'es',uiColor: '#819bea', toolbar: 'mini'}, class: "form-control", placeholder: 'Contenido' %>
+    </div>
+    <p>
+      <%= f.submit %>
+    </p>
+  </div>
+<% end %>

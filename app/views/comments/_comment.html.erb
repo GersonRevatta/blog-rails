@@ -1,0 +1,6 @@
+<h4><%= comment.name %></h4>
+<%= comment.body %>
+Submitted <%= time_ago_in_words(comment.created_at) %> Ago
+<% if current_user %>
+|<%= link_to 'Delete', [comment.post, comment], method: :destroy, data: { confirm: 'Are you sure?'} %>
+<% end %>

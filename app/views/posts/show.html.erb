@@ -1,0 +1,19 @@
+<div class="containter_new">
+  <div class="row">
+    <div class="col-md-10">
+      <h2 class="title_post"><strong><%= @post.name %></strong></h2>
+      <p>Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+      <% if current_user %>
+        |<%= link_to 'edit', edit_post_path(@post) %>
+        |<%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?'} %>
+      <% end %>
+      </p>
+      <div class="content_description"><%= raw @post.body %></div>
+      <div class="container_comment">
+        <h3><%= @post.comments.count %> coments</h3>
+        <%= render @post.comments %>
+        <%= render 'comments/form' %>
+      </div>
+    </div>
+  </div>
+</div>
